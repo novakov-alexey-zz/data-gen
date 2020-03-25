@@ -1,0 +1,21 @@
+[package]
+name = "data-gen"
+version = "0.0.1"
+
+[dependencies]
+rand = "0.7.3"
+chrono = { version = "0.4", features = ["serde"] }
+
+diesel = { version = "1.4", features = ["postgres", "numeric", "chrono"] }
+dotenv = "0.15.0"
+r2d2 = "*"
+r2d2-diesel = "*"
+openssl = "*"
+
+serde = "1.0"
+serde_derive = "1.0"
+
+job_scheduler = "*"
+
+log = "*"
+env_logger = "*"
